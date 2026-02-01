@@ -11,5 +11,5 @@ Check controls and Assumptions
    • Handle missing values for City, Salesperson, and Channel using reasonable business logic (document your approach).	There were several rows missing entries in the City column,Salesperson, and Channel. For the purposes of analysis, I autofilled unkwown,n/a and not assigned respectively.
    • Flag and correct suspicious UnitPrice values (e.g., negative prices) and discounts (e.g., > 30%).	I highlighted in bright yellow all the cells that had a negative value, the went ahead and used the absolute value function to correct them in a new column. I then went ahead and highlighted discounts that were above 30%
    • Ensure RequiredDate is not earlier than OrderDate; where it is, impute a corrected RequiredDate (explain your rule).	I used an IF function (if requireddate< orderdate) with a return value of valid and not valid since cannot logically precede the order being placed. I therefore set orderdate=requireddate to avoid 
-ABC analysis on SKUs	In our case, we need to group SKUs within a product category based on their contribution to that category's total gross revenue
+ABC analysis on SKUs	In our case, we need to group SKUs within a product category based on their contribution to that category's total gross revenue.
 
